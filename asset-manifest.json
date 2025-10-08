@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d8961ec7.css",
+    "main.js": "/static/js/main.2cf48677.js",
+    "static/js/453.5689e6cf.chunk.js": "/static/js/453.5689e6cf.chunk.js",
+    "static/media/wtsdu-badge.png": "/static/media/wtsdu-badge.a8fbf47e8de64bcb67db.png",
+    "index.html": "/index.html",
+    "main.d8961ec7.css.map": "/static/css/main.d8961ec7.css.map",
+    "main.2cf48677.js.map": "/static/js/main.2cf48677.js.map",
+    "453.5689e6cf.chunk.js.map": "/static/js/453.5689e6cf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d8961ec7.css",
+    "static/js/main.2cf48677.js"
+  ]
+}
