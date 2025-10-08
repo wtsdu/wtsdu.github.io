@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import logo from '../wtsdu-badge.png';
 import './Home.css';
-import BlogFeed from './BlogFeed';
-import UpcomingEvents from './UpcomingEvents';
 import About from './About'; 
 
 function Home() {

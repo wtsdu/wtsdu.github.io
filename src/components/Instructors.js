@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Lightbox from 'react-lightbox-component';
 import 'react-lightbox-component/build/css/index.css';
 import './Instructors.css';
 
