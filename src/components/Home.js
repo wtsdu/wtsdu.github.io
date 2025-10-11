@@ -24,6 +24,7 @@ function Home() {
                     <img src={logo} className="App-logo animate-logo" alt="logo" />
                     <div className="text-container animate-text">
                         <h1 className="cta-heading">Worldwide Tang Soo (Soo Bahk) Do Union</h1>
+                        <p className="cta-subtext">Two Badges, One Vision</p>
                         <p className="cta-subtext">Join us and discover the benefits of training today!</p>
                     </div>
                 </div>

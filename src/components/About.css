@@ -9,6 +9,19 @@
     text-align: left;
     transition: background-color 0.3s ease, color 0.3s ease, opacity 1s ease;
     opacity: 0; /* Initially hidden */
+    transform: translateX(100px); /* default starting position (slide from right) */
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Odd sections slide in from left */
+.section:nth-child(odd) {
+    transform: translateX(-100px);
+}
+
+/* When visible: fade in + slide to position */
+.section.visible {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .light-bg {
@@ -26,6 +39,15 @@
     margin-bottom: 10px;
 }
 
+/* Title colors that match section backgrounds */
+.light-bg .section-title {
+    color: #010120; /* dark navy for light sections */
+}
+
+.dark-bg .section-title {
+    color: #cccccc; /* off-white for dark sections */
+}
+
 .section-content {
     font-size: 1rem;
     white-space: pre-line; /* Preserves line breaks */
@@ -36,7 +58,7 @@
 @media screen and (orientation: landscape) {
     .section {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
     }
 

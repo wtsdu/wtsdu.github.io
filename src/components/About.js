@@ -4,20 +4,18 @@ import './About.css';
 const About = () => {
     const sections = [
         {
-            title: "What is Tang Soo (Soo Bhak) Do?",
+            title: "What is Tang Soo (Soo Bahk) Do?",
             content: `Tang Soo Do is a Korean Martial Art much the same as karate and can include fighting principles from Tai Chi, Taekkyeon and Subak, as well as northern and southern Chinese martial arts. From its beginnings in 1944 to today, Tang Soo Do is used by some Kwans to identify their traditional Korean fusion of fighting styles.`,
         },
         {
             title: "Our Mission Statement",
-            content: `"Two Badges, On Vision"
+            content: `"Two Badges, One Vision"
 
-            The worldwide Tang Soo (Soo Bahk) Do Union (WTSDU) was founded on the principal of unity through diversity, evaolving from humbble beginings into a globbal martial arts community.
+            The Worldwide Tang Soo (Soo Bahk) Do Union (WTSDU) was founded on the principle of unity through diversity, evolving from humble beginnings into a global martial arts community.
 
-            Originally estabblished as Tang Soo Do Cymru, Master Houghton created the organisation to preserve and honor the legacy of his instructor, Master PVM Chin, while fostering a martial arts evironment free from political interference and organisational rigidity.
+            Originally established as Tang Soo Do Cymru, Master Houghton created the organisation to preserve and honor the legacy of his instructor, Master PVM Chin, while fostering a martial arts environment free from political interference and organisational rigidity.
 
-            The turning point came when Master Houghton was approached by an Egyptian colleauge in need of support for a club of special needs students. Recognising the value of structure and opppertunity, Master Houghton provided guidence and a syllabus that soon gained recognition and endorsement from the Egyptian governement - sparking interest from neighbbouring North African couontries. This international momentum, combbined with increasing interest from English practitioner seeking a professional and inclusive training environment, led to the formation of the WTSDU.
-
-            Today, the WTSDU offers a dynamic platform where clubs from around the world can affiliate, grow, and train under a high-quality, standardised syllabus while maintaining their own governance and cultural identity. This is symbolised in the “Two Badges, One Vision” ethos: each club retains its own badge worn proudly on the left breast, alongside the WTSDU badge on the left arm—reflecting both local heritage and global unity.
+            Today, the WTSDU offers a dynamic platform where clubs from around the world can affiliate, grow, and train under a high-quality, standardised syllabus while maintaining their own governance and cultural identity. This is symbolised in the "Two Badges, One Vision" ethos: each club retains its own badge worn proudly on the left breast, alongside the WTSDU badge on the left arm, reflecting both local heritage and global unity.
 
             The Worldwide (UK) Tang Soo (Soo Bahk) Do Union now serves as the UK branch and foundation of the broader WTSDU network, welcoming other clubs and countries into a partnership based on respect, autonomy, and excellence.
 
@@ -29,7 +27,7 @@ const About = () => {
 
             Foster international collaboration and community without sacrificing individual identity or values.
 
-            WTSDU stands not just as an organisation but as a family—united in purpose, diverse in culture, and committed to preserving the true spirit of Tang Soo (Soo Bahk) Do.
+            WTSDU stands not just as an organisation but as a family, united in purpose, diverse in culture, and committed to preserving the true spirit of Tang Soo (Soo Bahk) Do.
 
             In a nutshell,  the idea of the WTSDU is to foster a community of martial artists dedicated to personal growth, physical and mental wellbeing, and the preservation and advancement of martial arts traditions through education, competition and service.
 
@@ -49,7 +47,7 @@ const About = () => {
             content: `"I hear and I forget; I see, and I remember; I do, and I understand." 
             - Confucius.
 
-            Self confidence
+            Self-confidence
 
             Improve self-esteem.
 
@@ -57,7 +55,7 @@ const About = () => {
 
             Physical fitness and self-improvement.
 
-            Self defence.
+            Self-defence.
 
             Peace of mind.
 
@@ -67,7 +65,7 @@ const About = () => {
         },
         {
             title: "Our style - Joong Gan Ryu (Middle Way Style)",
-            content: `Joong Gan Ryu (Middle Way Style) Utilises hard / soft, light / heavy, active, and passive types of movements. The softer / heavier movements are like the northern Chinese styles, where the lighter / active movements are like the Southern Chinese styles. All these factors make Soo Bahk Do a very versatile, challenging martial art.`,
+            content: `Joong Gan Ryu (Middle Way Style) utilises hard/soft, light/heavy, active, and passive types of movements. The softer/heavier movements are like the northern Chinese styles, where the lighter/active movements are like the Southern Chinese styles. All these factors make Soo Bahk Do a very versatile, challenging martial art.`,
         },
         {
             title: "Main aims and basic principles of the WTSDU",
@@ -83,37 +81,39 @@ const About = () => {
         },
         {
             title: "Main Aims laid down by the WTSDU",
-            content: `1. Foster goodwill and friendship among affiliated members.
+            content: `1. To foster goodwill and friendship among members inside and outside of the club.
 
-                    2. Supervise and maintain the rules and regulations of Tang Soo Do.
+                    2. To supervise and maintain the rules and regulations of the Worldwide Tang Soo (Soo Bahk) Do Union.
 
-                    3. Organise National and international events or championships.
+                    3. To organise proper guidance on training programmes.
 
-                    4. Organise proper guidance on training programmes.
+                    4. To assist in the development of professional clubs within the United Kingdom and globally.
 
-                    5. To assist in the formation of Tang Soo Do clubs in the United Kingdom.`,
+                    5. To assist in the development of all club members regardless of neurodivergence or disability.`,
         },
     ];
 
     useEffect(() => {
-        const handleVisibility = () => {
-            const elements = document.querySelectorAll('.section');
-            elements.forEach((el) => {
-                // const rect = el.getBoundingClientRect();
-                // doesn't work for some reason??
-                //if (rect.top < window.innerHeight) {
-                //    el.classList.add('visible');
-                //}
-                el.classList.add('visible');
-            });
-        };
+        const sections = document.querySelectorAll('.section');
 
-        // Check visibility on page load
-        handleVisibility();
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    } else {
+                        entry.target.classList.remove('visible');
+                    }
+                });
+            },
+            {
+                threshold: 0.2, // triggers when 20% of section is visible
+            }
+        );
 
-        // Add scroll event listener
-        window.addEventListener('scroll', handleVisibility);
+        sections.forEach((section) => observer.observe(section));
 
+        return () => observer.disconnect();
     }, []);
 
     return (
