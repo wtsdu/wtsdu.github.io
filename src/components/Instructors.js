@@ -55,7 +55,7 @@ const instructors = [
     },
     {
         name: 'Stuart Dimond 2nd Dan',
-        picture: '/images/stuart.jpeg',
+        picture: '/images/stuart.png',
         bio: [
             '',
         ],

@@ -29,14 +29,14 @@ function NavBar() {
                 >
                     <Link to="/" onClick={handleLinkClick}>Home</Link>
                     <Link to="clubs" onClick={handleLinkClick}>National Clubs</Link>
-                    <Link to="team" onClick={handleLinkClick}>Committee</Link>
+                    <Link to="team" onClick={handleLinkClick}>Meet The Team</Link>
                     <Link to="library" onClick={handleLinkClick}>Student Library</Link>
                     <Link to="contact" onClick={handleLinkClick}>Contact Us</Link> 
                 </Menu>
                 <ul className="navbar-items">
                     <NavBarItem label="Home" action="/"/>
                     <NavBarItem label="National Clubs" action="clubs"/>
-                    <NavBarItem label="Committee" action="team" />
+                    <NavBarItem label="Meet The Team" action="team" />
                     <NavBarItem label="Student Library" action="library" />
                     <NavBarItem label="Contact Us" action="contact" />
                 </ul>
