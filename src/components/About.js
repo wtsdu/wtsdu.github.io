@@ -6,6 +6,7 @@ const About = () => {
         {
             title: "What is Tang Soo (Soo Bahk) Do?",
             content: `Tang Soo Do is a Korean Martial Art much the same as karate and can include fighting principles from Tai Chi, Taekkyeon and Subak, as well as northern and southern Chinese martial arts. From its beginnings in 1944 to today, Tang Soo Do is used by some Kwans to identify their traditional Korean fusion of fighting styles.`,
+            image: "/images/earlypic.gif"
         },
         {
             title: "Our Mission Statement",
@@ -125,7 +126,13 @@ const About = () => {
                     className={`section ${index % 2 === 0 ? 'light-bg' : 'dark-bg'}`}
                 >
                     <h2 className="section-title">{section.title}</h2>
-                    <p className="section-content">{section.content}</p>
+                    <p className="section-content">{section.content}
+                        {section.image && (
+                            <div className="section-image">
+                                <img src={section.image} alt={section.title} />
+                            </div>
+                        )}
+                    </p>
                 </div>
             ))}
             </div>
