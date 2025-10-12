@@ -7,6 +7,7 @@ import ScrollToTop from './components/ScrollToTop';
 
 import Home from './components/Home';
 import About from './components/About'
+import Clubs from './components/Clubs'
 import Instructors from './components/Instructors';
 import Gallery from './components/Gallery'
 import Classes from './components/Classes'
@@ -25,6 +26,7 @@ function App() {
                         <Routes>
                             <Route path="/" element={<Home />} />
                             <Route path="about" element={<About />} />
+                            <Route path="clubs" element={<Clubs /> } />
                             <Route path="team" element={<Instructors />} />
                             <Route path="gallery" element={<Gallery />} />
                             <Route path="classes" element={<Classes />} />
