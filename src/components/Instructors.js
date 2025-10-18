@@ -7,17 +7,20 @@ const instructors = [
         name: 'Master Nicholas Houghton 6th Dan',
         picture: '/images/nic.png',
         bio: [
-            'As the lead instructor for South Wales, Master Houghton 6th Dan continues to pass down the knowledge from his instructor. Starting training in martial arts in 1988 beginning with Judo and boxing and continuing with Tang Soo Do in 1990.',
-            'After relocating to South Wales 2004 he set up Tang Soo Do Cymru, with the help of his assistant instructors he runs 11 classes each week including after school clubs and ladies only sessions.',
-            'Master Houghton had his first international trip in 1993, taking part in the United Kingdom demonstration team, also competing in the Greece National Championships winning second place.',
-            'Master Houghton was encouraged to cross train and gain experience in many different combat styles of martial arts including Judo, Ninjutsu, Muay Thai, Boxing, MMA, Karate, krav maga and Jiujitsu.',
+            'President - Worldwide Tang Soo(Soo Bahk) Do Union(WTSDU)',
+            '',
+            'Master Nicholas Houghton, 6th Dan, is a seasoned martial artist with over 35 years of experience in Tang Soo Do, having begun his training in 1989. He is the President and founder of the Worldwide Tang Soo(Soo Bahk) Do Union(WTSDU), an organisation established to preserve and grow the traditional values and techniques of Tang Soo(Soo Bahk) Do throughout the UK and internationally.',
+            '',
+            'A former student of the late Grandmaster U K Lee, Master Houghton also trained under Master P.V.M.Chin, President of the International Tang Soo Do Federation(ITSDF), before recently stepping away from the organisation to establish the WTSDU.With this distinguished lineage and decades of research, Master Houghton has developed an exciting, fuller syllabus that remains rooted in tradition while evolving to meet the needs of modern practitioners.',
+            '',
+            'Through the WTSDU, Master Houghton is dedicated to uniting martial artists across the globe under a shared commitment to technical excellence, discipline, and the enduring spirit of Tang Soo(Soo Bahk) Do.',
         ],
     },
     {
         name: "Chris Ward 3rd Dan",
         picture: '/images/chris.png',
         bio: [
-            '',
+            'Began training in Tang Soo Do in 1990 and teaching in the Oxford area since 2023, Kyo Sa Ward is England\'s senior instructor for the WTSDU. National champion from 2016 to 2024 and international competition gold and silver medallist in the 2025 ITSDF World Championship.',
         ],
     },
     {
@@ -33,7 +36,7 @@ const instructors = [
         picture: '/images/tom.png',
         bio: [
             'Dragons instructor and assistant in mixed sessions.',
-            'Tom is preparing for his first world championships in the United Kingdom in September 2025.'
+            'Tom represented the United Kingdom in the 2025 ITSDF World Championships.'
         ],
     },
     {
