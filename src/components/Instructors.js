@@ -51,9 +51,13 @@ const instructors = [
         name: 'Emma Mudie 2nd Dan',
         picture: '/images/emma.jpeg',
         bio: [
-            'Lead instructor for Tiny Tigers, safeguarding officer, Ladies class instructor and assistant for mixed sessions and Dragons.',
-            'Emma first got involved in Tang Soo Do when her son Jack joined in 2015.',
-            'Emma retired as a Police Officer after 30 years of service specialising in children and safeguarding.'
+            'Instructor Bio – Emma Mudie, 2nd Dan. With years of experience teaching children, youth, and adults of all abilities, she brings a caring and inclusive approach to every class.',
+            '',
+            'A retired police officer  of 30 years service and experienced educator, Emma understands how confidence, awareness, and practical self-defence skills can empower people to feel safe and capable in their daily lives. Her Ladies-Only Self Defence classes provide a respectful and supportive space where women can learn effective techniques grounded in both traditional martial arts and real-world experience.',
+            '',
+            'Based in Wales, Emma aims to begin offering remote instruction and in-person seminars, sharing her passion for Tang Soo Do and self-defence with new communities.',
+            '',
+            'With over two decades of experience delivering safety and wellbeing education in schools and communities, Emma holds both a Postgraduate Diploma in Education and a Master’s degree in Education. Her teaching philosophy blends the discipline of Tang Soo Do with values of respect, courage, and personal growth — helping every student build strength, confidence, and resilience in body and mind',
         ],
     },
     {
