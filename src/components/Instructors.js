@@ -5,7 +5,7 @@ import './Instructors.css';
 const instructors = [
     {
         name: 'Master Nicholas Houghton 6th Dan',
-        picture: '/images/nic.png',
+        picture: '/images/nic.jpeg',
         bio: [
             'President - Worldwide Tang Soo(Soo Bahk) Do Union(WTSDU)',
             '',
