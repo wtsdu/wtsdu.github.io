@@ -41,7 +41,7 @@ const instructors = [
     },
     {
         name: 'David Shaw 3rd Dan',
-        picture: '/images/david.png',
+        picture: '/images/david.jpeg',
         bio: [
             'Assistant in the mixed sessions.',
             'David has taken part in the United Kingdom world championships in 2018, winning second place.'
