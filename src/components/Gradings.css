@@ -1,0 +1,164 @@
+/* Styles specific to Gradings page */
+.gradings-page {
+    /* All your previous styles for sectionPage */
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Title and Headers */
+.gradings-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2a2a2a;
+    border-bottom: 3px solid #AA0000;
+    padding-bottom: 10px;
+}
+
+.gradings-page h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    color: #101020;
+}
+
+.gradings-page h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+    border-bottom: 2px solid #f1f1f1;
+    padding-bottom: 5px;
+}
+
+.gradings-page h4 {
+    font-size: 1.25rem;
+    color: #555;
+    margin-top: 15px;
+}
+
+/* Paragraph and Content Styling */
+.gradings-page p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Remove default styling for lists */
+.gradings-page ul, .gradings-page ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.gradings-page ul li, .gradings-page ol li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    background-color: #f1f1f1;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for list items */
+.gradings-page ul li:hover, .gradings-page ol li:hover {
+    background-color: #e4e4e4;
+}
+
+/* Adding custom bullets or icons to list items */
+.gradings-page ul li::before, .gradings-page ol li::before {
+    content: '✔';
+    margin-right: 10px;
+    color: #4CAF50;
+}
+
+/* Table Styling */
+.gradings-page table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.gradings-page table th, .gradings-page table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.gradings-page table th {
+    background-color: #aa0000;
+    color: white;
+}
+
+.gradings-page table td {
+    background-color: #f9f9f9;
+}
+
+/* Links */
+.gradings-page a {
+    color: #4CAF50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.gradings-page a:hover {
+    color: #aa0000;
+}
+
+/* Flexbox for better layout (for sections or rows) */
+.gradings-page section {
+    margin-bottom: 30px;
+}
+
+/* Add spacing for various sections to make it more breathable */
+.gradings-page section p, .gradings-page section h3 {
+    margin-bottom: 20px;
+}
+
+/* Card-like sections with padding and background color */
+.gradings-page section {
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Add specific style to lists inside sections for better readability */
+.gradings-page section ul {
+    padding-left: 20px;
+}
+
+.gradings-page section ul li {
+    margin-bottom: 15px;
+}
+
+/* Styling for specific text elements */
+.gradings-page strong {
+    font-weight: bold;
+    color: #333;
+}
+
+.gradings-page em {
+    font-style: italic;
+    color: #777;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .gradings-page {
+        padding: 15px;
+    }
+
+    .gradings-page h1 {
+        font-size: 2rem;
+    }
+
+    .gradings-page h2, .gradings-page h3, .gradings-page h4 {
+        font-size: 1.25rem;
+    }
+
+    .gradings-page table, .gradings-page ul, .gradings-page ol {
+        font-size: 0.9rem;
+    }
+}

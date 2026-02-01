@@ -12,6 +12,7 @@ import Instructors from './components/Instructors';
 import Gallery from './components/Gallery'
 import Classes from './components/Classes'
 import Library from './components/Library'
+import Gradings from './components/Gradings'
 import Contact from './components/Contact'
 import Quiz from './components/Quiz'
 
@@ -31,6 +32,7 @@ function App() {
                             <Route path="gallery" element={<Gallery />} />
                             <Route path="classes" element={<Classes />} />
                             <Route path="library" element={<Library />} />
+                            <Route path="gradings" element={<Gradings />} />
                             <Route path="contact" element={<Contact />} />
                             <Route path="library/quiz" element={<Quiz />} />
                             <Route path="*" element={<Home />} />
