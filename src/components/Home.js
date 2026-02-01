@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import logo from '../wtsdu-badge.png';
+import backgroundImage from '../bg1.png';
 import './Home.css';
 import About from './About'; 
 
@@ -19,6 +20,7 @@ function Home() {
             {/* Call-to-action section */}
             <div
                 className={`App-content ${backgroundClass}`}
+                style={{ backgroundImage: `url(${backgroundImage})` }}
             >
                 <div className="cta-container">
                     <img src={logo} className="App-logo animate-logo" alt="logo" />
