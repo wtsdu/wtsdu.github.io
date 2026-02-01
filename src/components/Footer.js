@@ -2,7 +2,7 @@
 function Footer() {
     return (
         <footer className="App-footer">
-            <p>Copyright &copy; 2025 Worldwide Tang Soo (Soo Bahk) Do Union</p>
+            <p>Copyright &copy; 2025-2026 Worldwide Tang Soo (Soo Bahk) Do Union</p>
         </footer>
         );
 }
