@@ -3,6 +3,7 @@ import logo from '../wtsdu-badge.png';
 import backgroundImage from '../bg1.png';
 import './Home.css';
 import About from './About'; 
+import UpcomingEvents from './UpcomingEvents';
 
 function Home() {
     const [backgroundClass, setBackgroundClass] = useState('initial-bg');
@@ -31,6 +32,7 @@ function Home() {
                     </div>
                 </div>
             </div>
+            <UpcomingEvents/>
             <About/>
         </div>
     );
