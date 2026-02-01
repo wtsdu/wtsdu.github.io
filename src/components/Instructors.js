@@ -32,19 +32,28 @@ const instructors = [
         ],
     },
     {
-        name: 'Tom Jenkins-Welch 2nd Dan',
-        picture: '/images/tom.png',
+        name: 'David Shaw 3rd Dan',
+        picture: '/images/david.jpeg',
+        bio: [
+            'Assistant in the mixed sessions.',
+            'David has taken part in the United Kingdom world championships in 2018, winning second place.'
+        ],
+    },
+    {
+        name: 'Tom Jenkins-Welch 3rd Dan',
+        picture: '/images/tom.jpeg',
         bio: [
             'Dragons instructor and assistant in mixed sessions.',
             'Tom represented the United Kingdom in the 2025 ITSDF World Championships.'
         ],
     },
     {
-        name: 'David Shaw 3rd Dan',
-        picture: '/images/david.jpeg',
+        name: 'Graham Keable 3rd Dan',
+        picture: '/images/graham.jpeg',
         bio: [
-            'Assistant in the mixed sessions.',
-            'David has taken part in the United Kingdom world championships in 2018, winning second place.'
+            'Graham began martial arts training in 1990, earning his 2nd Dan black belt in 1998. A dedicated competitor, he represented the UK in three international tournaments and became a two-time world champion.',
+            '',
+            'After retiring in 2003, he returned to training in 2021, with a wish to continue to train and improve whilst hoping to inspire others with skill, discipline, commitment and a traditional approach to training.',
         ],
     },
     {
@@ -63,13 +72,6 @@ const instructors = [
     {
         name: 'Stuart Dimond 2nd Dan',
         picture: '/images/stuart.png',
-        bio: [
-            '',
-        ],
-    },
-    {
-        name: 'Graham Keable 2nd Dan',
-        picture: '/images/graham.png',
         bio: [
             '',
         ],
