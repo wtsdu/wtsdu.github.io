@@ -22,7 +22,7 @@ const instructors = [
         bio: [
             'Began training in Tang Soo Do in 1990 and was awarded his 1st dan in 1998, under Grandmaster Kang Uk Lee.',
             '',
-            'Kyo Sa Ward teaching in the Oxford area since 2023 and is England\'s senior instructor for the WTSDU. National champion from 2016 to 2024 and international competition gold and silver medallist in the 2025 ITSDF World Championship.',
+            'Kyo Sa Ward has been teaching in the Oxford area since 2023 and is England\'s senior instructor for the WTSDU. National champion from 2016 to 2024 and international competition gold and silver medallist in the 2025 ITSDF World Championship.',
         ],
     },
     {
@@ -30,6 +30,7 @@ const instructors = [
         picture: '/images/rhix.jpeg',
         bio: [
             'Assistant Instructor for Tiny Tigers, Dragons and Mixed session.',
+            '',
             'Rhix started Tang Soo Do in 2007 at the age of 12, taking part in world championships in Malaysia (2015), UK (2018), and competing again in the UK (2025).'
         ],
     },
@@ -38,6 +39,7 @@ const instructors = [
         picture: '/images/david.jpeg',
         bio: [
             'Assistant in the mixed sessions.',
+            '',
             'David has taken part in the United Kingdom world championships in 2018, winning second place.'
         ],
     },
@@ -46,6 +48,7 @@ const instructors = [
         picture: '/images/tom.jpeg',
         bio: [
             'Dragons instructor and assistant in mixed sessions.',
+            '',
             'Tom represented the United Kingdom in the 2025 ITSDF World Championships.'
         ],
     },
