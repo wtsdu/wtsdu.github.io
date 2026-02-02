@@ -51,14 +51,14 @@ function NavBar() {
                         <FaFacebook size={24} />
                     </a>
                     <a
-                        href="https://www.youtube.com/@Tangsoodocymru"
+                        href="https://www.youtube.com/@WorldWideTSDUnion"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         <FaYoutube size={24} />
                     </a>
                     <a
-                        href="https://www.tiktok.com/@tsdcymru"
+                        href="https://www.tiktok.com/@wtsdu2026"
                         target="_blank"
                         rel="noopener noreferrer"
                     >

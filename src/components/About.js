@@ -14,7 +14,7 @@ const About = () => {
 
             The Worldwide Tang Soo (Soo Bahk) Do Union (WTSDU) was founded on the principle of unity through diversity, evolving from humble beginnings into a global martial arts community.
 
-            Originally established as Tang Soo Do Cymru, Master Houghton created the organisation to preserve and honor the legacy of his instructor, Master PVM Chin, while fostering a martial arts environment free from political interference and organisational rigidity.
+            Originally established as Tang Soo Do Cymru, Master Houghton created the organisation to preserve and honor the legacy of his instructor, Master PVM Chin, and the late ITSDF President, Grandmaster Kang Uk Lee, while fostering a martial arts environment free from political interference and organisational rigidity.
 
             Today, the WTSDU offers a dynamic platform where clubs from around the world can affiliate, grow, and train under a high-quality, standardised syllabus while maintaining their own governance and cultural identity. This is symbolised in the "Two Badges, One Vision" ethos: each club retains its own badge worn proudly on the left breast, alongside the WTSDU badge on the left arm, reflecting both local heritage and global unity.
 
@@ -36,7 +36,7 @@ const About = () => {
 
             To provide opportunities for all members of the WTSDU to develop their skill through the provision of high-quality coaching and competitive opportunities.
 
-            To create strong links with other clubs, countries, and WTSDU members.
+            To create strong links with other clubs, countries, and Tang Soo Do practitioners across the globe.
             `,
         },
         {

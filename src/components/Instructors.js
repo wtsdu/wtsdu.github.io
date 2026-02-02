@@ -7,20 +7,22 @@ const instructors = [
         name: 'Master Nicholas Houghton 6th Dan',
         picture: '/images/nic.jpeg',
         bio: [
-            'President - Worldwide Tang Soo(Soo Bahk) Do Union(WTSDU)',
+            'President - Worldwide Tang Soo (Soo Bahk) Do Union(WTSDU)',
             '',
-            'Master Nicholas Houghton, 6th Dan, is a seasoned martial artist with over 35 years of experience in Tang Soo Do, having begun his training in 1989. He is the President and founder of the Worldwide Tang Soo(Soo Bahk) Do Union(WTSDU), an organisation established to preserve and grow the traditional values and techniques of Tang Soo(Soo Bahk) Do throughout the UK and internationally.',
+            'Master Nicholas Houghton, 6th Dan, is a seasoned martial artist with over 35 years of experience in Tang Soo Do, having begun his training in 1989. He is the President and founder of the Worldwide Tang Soo (Soo Bahk) Do Union (WTSDU), an organisation established to preserve and grow the traditional values and techniques of Tang Soo (Soo Bahk) Do throughout the UK and internationally.',
             '',
-            'A former student of the late Grandmaster U K Lee, Master Houghton also trained under Master P.V.M.Chin, President of the International Tang Soo Do Federation(ITSDF), before recently stepping away from the organisation to establish the WTSDU.With this distinguished lineage and decades of research, Master Houghton has developed an exciting, fuller syllabus that remains rooted in tradition while evolving to meet the needs of modern practitioners.',
+            'A former student of the late Grandmaster Kang Uk Lee, Master Houghton also trained under Master P.V.M. Chin, President of the International Tang Soo Do Federation (ITSDF), before recently stepping away from the organisation to establish the WTSDU. With this distinguished lineage and decades of research, Master Houghton has developed an exciting, fuller syllabus that remains rooted in tradition while evolving to meet the needs of modern practitioners.',
             '',
-            'Through the WTSDU, Master Houghton is dedicated to uniting martial artists across the globe under a shared commitment to technical excellence, discipline, and the enduring spirit of Tang Soo(Soo Bahk) Do.',
+            'Through the WTSDU, Master Houghton is dedicated to uniting martial artists across the globe under a shared commitment to technical excellence, discipline, and the enduring spirit of Tang Soo (Soo Bahk) Do.',
         ],
     },
     {
         name: "Chris Ward 3rd Dan",
         picture: '/images/chris.png',
         bio: [
-            'Began training in Tang Soo Do in 1990 and teaching in the Oxford area since 2023, Kyo Sa Ward is England\'s senior instructor for the WTSDU. National champion from 2016 to 2024 and international competition gold and silver medallist in the 2025 ITSDF World Championship.',
+            'Began training in Tang Soo Do in 1990 and was awarded his 1st dan in 1998, under Grandmaster Kang Uk Lee.',
+            '',
+            'Kyo Sa Ward teaching in the Oxford area since 2023 and is England\'s senior instructor for the WTSDU. National champion from 2016 to 2024 and international competition gold and silver medallist in the 2025 ITSDF World Championship.',
         ],
     },
     {
