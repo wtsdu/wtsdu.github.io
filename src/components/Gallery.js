@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Lightbox from 'react-lightbox-component';
 import 'react-lightbox-component/build/css/index.css';
 import './Gallery.css';
+import ReactDOM from 'react-dom';
 
 function Gallery() {
     const [albums, setAlbums] = useState({});
@@ -58,7 +59,10 @@ function Gallery() {
             </div>
             <h3>Photos in this Album</h3>
             {albums[currentAlbum]?.length > 0 ? (
-                <Lightbox images={albums[currentAlbum]} />
+                ReactDOM.createPortal(
+                    <Lightbox images={albums[currentAlbum]} />,
+                    document.getElementById('lightbox-root')
+                )
             ) : (
                 <p>Loading gallery...</p>
             )}
