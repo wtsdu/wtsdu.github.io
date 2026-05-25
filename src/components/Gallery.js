@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import Lightbox from 'react-lightbox-component';
-import 'react-lightbox-component/build/css/index.css';
+import Lightbox from 'yet-another-react-lightbox';
+import 'yet-another-react-lightbox/styles.css';
 import './Gallery.css';
 
 function Gallery() {
     const [albums, setAlbums] = useState({});
     const [currentAlbum, setCurrentAlbum] = useState('');
+    const [photoIndex, setPhotoIndex] = useState(-1);
 
     useEffect(() => {
         fetch('/gallery/index.html')
@@ -21,7 +22,6 @@ function Gallery() {
                     const title = img.getAttribute('alt') || 'Gallery Image';
                     const match = src.match(/images\/gallery\/([^/]+)/);
                     let album = match ? decodeURIComponent(match[1]) : 'Default';
-                    // Optional: Replace dashes/underscores with spaces and capitalize
                     album = album.replace(/[-_]/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 
                     const image = {
@@ -40,6 +40,8 @@ function Gallery() {
             .catch((error) => console.error('Error loading gallery:', error));
     }, []);
 
+    const images = albums[currentAlbum] || [];
+
     return (
         <div className="sectionPage">
             <h2>Gallery</h2>
@@ -49,7 +51,7 @@ function Gallery() {
                 {Object.keys(albums).map((albumName) => (
                     <button
                         key={albumName}
-                        onClick={() => setCurrentAlbum(albumName)}
+                        onClick={() => { setCurrentAlbum(albumName); setPhotoIndex(-1); }}
                         className={albumName === currentAlbum ? 'active' : ''}
                     >
                         {albumName}
@@ -57,8 +59,26 @@ function Gallery() {
                 ))}
             </div>
             <h3>Photos in this Album</h3>
-            {albums[currentAlbum]?.length > 0 ? (
-                <Lightbox images={albums[currentAlbum]} />
+            {images.length > 0 ? (
+                <>
+                    <div className="gallery-grid">
+                        {images.map((img, index) => (
+                            <div
+                                key={index}
+                                className="gallery-thumb"
+                                onClick={() => setPhotoIndex(index)}
+                            >
+                                <img src={img.src} alt={img.title} />
+                            </div>
+                        ))}
+                    </div>
+                    <Lightbox
+                        slides={images}
+                        open={photoIndex >= 0}
+                        index={photoIndex}
+                        close={() => setPhotoIndex(-1)}
+                    />
+                </>
             ) : (
                 <p>Loading gallery...</p>
             )}
